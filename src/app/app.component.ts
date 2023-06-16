@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'enset-app';
+  actions : Array<any> = [
+    {title : "Home" , route : "/home", icon : "house"},
+    {title : "New Product" , route : "/newProduct", icon : "arrow-down-up"},
+    {title : "Products" , route : "/products", icon : "plus-circle"}
+  ]
+  currentAction : any;
+
+  setCurrentActiob(action: any) {
+    this.currentAction=action;
+  }
 }

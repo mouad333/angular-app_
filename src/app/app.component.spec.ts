@@ -19,7 +19,8 @@ describe('AppComponent', () => {
   it(`should have as title 'enset-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('enset-app');
+    /*a voir app.title*/
+    expect(app.actions).toEqual('enset-app');
   });
 
   it('should render title', () => {
